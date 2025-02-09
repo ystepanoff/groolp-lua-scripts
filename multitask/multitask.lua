@@ -1,4 +1,4 @@
--- multitasks.lua
+-- multitask.lua
 -- A script that defines several tasks in one file.
 
 register_task("foo", "Demonstrate a simple foo task", function()
