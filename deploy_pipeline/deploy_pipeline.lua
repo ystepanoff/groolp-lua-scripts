@@ -54,7 +54,7 @@ register_task("deploy", "Deploy the project to production", function()
 	if not buildTime then
 		error("Deployment prerequisite not met: missing build information.")
 	end
-	local code, err = run_command(`echo "This is a placeholder for deploy command`)
+	local code, err = run_command('echo "This is a placeholder for deploy command"')
 	if err then
 		error("Deployment failed: " .. err)
 	elseif code ~= 0 then
