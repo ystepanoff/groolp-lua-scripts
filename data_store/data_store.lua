@@ -1,4 +1,4 @@
--- data_collab.lua
+-- data_store.lua
 
 -- Task that sets a "version" in global data
 register_task("set-version", "Set the version in global data store", function()
