@@ -2,18 +2,16 @@
 -- Demonstrates tasks that depend on other tasks.
 
 -- A "clean" task
-register_task("clean", "Clean up the build directory", function()
-	print("Cleaning build directory...")
-	-- add logic
+register_task("taskA", "Task A", function()
+	print("Running task A...")
 end)
 
 -- A "build" task that depends on "clean"
 register_task(
-	"build",
-	"Build the project",
+	"taskB",
+	"Task B",
 	function()
-		print("Building project after cleaning...")
-		-- build logic here
+		print("Running task B")
 	end,
-	{ "clean" } -- dependencies array
+	{ "taskB" } -- dependencies array
 )
